@@ -1,5 +1,9 @@
 {
   "expo": {
+    "jsEngine": "hermes",
+    "ios": {
+      "jsEngine": "jsc"
+    },
     "name": "kautapp",
     "slug": "kautapp",
     "version": "1.0.0",
@@ -15,16 +19,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jibanezm1.kautapp"
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAQbmLRDXnmodAxAj-KiDRbbZPHT8oil_E"
+        },
+        "googleSignIn": {
+          "apiKey": "AIzaSyAQbmLRDXnmodAxAj-KiDRbbZPHT8oil_E"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jibanezm1.kautapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dd00f59d-f299-486b-87a4-9d1420f9145f"
+      }
     }
   }
 }
